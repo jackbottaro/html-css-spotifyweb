@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* WRAP SETTINGS */
 
 .wrap {
@@ -136,6 +142,6 @@
 /* FOOTER */
 
 .main-footer {
-  flex-basis: 70px;
+  flex-basis: 80px;
   background-color: #282828;
 }
