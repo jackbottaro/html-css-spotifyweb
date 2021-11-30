@@ -1,0 +1,58 @@
+/* GLOBAL SETTINGS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* WRAP SETTINGS */
+
+.wrap {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+.main-header {
+  background-color: #080b12;
+  width: 85%;
+  float: left;
+  height: 100px;
+}
+
+/* MAIN */
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  background-color: #141922;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.inside-container {
+  width: 100%;
+  height: 100%;
+}
+
+.inside-content {
+}
+
+/* SIDEBAR */
+
+.main-sidebar {
+  height: 100%;
+  background-color: #000;
+  width: 15%;
+  float: left;
+}
+
+/* FOOTER */
+
+.main-footer {
+  flex-basis: 80px;
+  background-color: #282828;
+}
