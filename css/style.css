@@ -6,163 +6,143 @@
   margin: 0;
 }
 
-.clearfix::after {
+.clearfix:after {
   content: "";
   clear: both;
   display: table;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
   all: unset;
 }
-/* WRAP SETTINGS */
 
-.wrap {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+ul {
+  list-style-type: none;
 }
 
 /* HEADER */
 
-.main-header {
-  background-color: #080b12;
-  width: 85%;
-  float: left;
-  height: 100px;
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 50px);
+  height: 80px;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+}
 }
 
-.upgrade-btn {
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  margin-right: 10px;
-  font-size: 13px;
-  font-weight: bold;
-  cursor: pointer;
+/*** HEADER BUTTON ***/
+
+.upgrade-button{
+color: white;
+
+
 }
 
-.main-footer {
-  flex-basis: 60px;
-  padding-top: 5px;
-  background-color: #282828;
-}
+.upgrade-button > a:nth-child(1) {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+   }
+   
 
 /* MAIN */
 
-.main-content {
+main {
+height: calc(100vh - 80px);
+  position: relative;
   display: flex;
-  flex-grow: 1;
-  background-color: #141922;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
-.inside-container {
-  width: 100%;
-  height: 100%;
+.main-content{
+    background-color: #141922;
+width: 100%;
+margin-left: 50px;
+margin-top: 80px;
+
 }
 
-.inside-content {
+/*** NAVBAR ***/
+
+.navigation-list{
+    color: #6b6e74;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    justify-content: center;
+
+}
+
+.navigation-list li{
+    margin-left: 13px;
+}
+
+.navigation-list li:hover{
+
+    border-bottom: 3px solid #93d92c;
+
+}
+
+/*** RECENTLY PLAYED ***/
+
+.recently-played{
+    margin-left: 15px;
 }
 
 /* SIDEBAR */
 
-.main-sidebar {
-  height: 100%;
+.sidebar {
   background-color: black;
-  width: 15%;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  justify-content: space-between;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0;
 }
 
-/*** SIDEBAR IMAGE ***/
-
-.sidebar-nav ul li img {
-  height: 40px;
-  width: 100%;
+.sidebar-nav,
+.sidebar-user{
+    width: 30px;
+    align-content: center;
 }
-
-.sidebar-user ul li img {
-  height: 30px;
-  width: 100%;
-}
-
-.sidebar-user > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(2) {
-  height: 15px;
-  margin-bottom: 10px;
-}
-
-.bg-gray {
-  background-color: gray;
-  border-radius: 50%;
-}
-
-/*** SIDEBAR CONTAINER ***/
-
-.sidebar-nav {
-  width: 50%;
-}
-
-.sidebar-user {
-  width: 50%;
-  padding-bottom: 20px;
-}
-
-/*** SIDEBAR HIDDEN  ***/
-
-.link-text {
-  display: none;
-}
-
-/*** SIDEBAR LIST  ***/
 
 .sidebar-nav li,
-.sidebar-user li {
-  list-style-type: none;
+.sidebar-user li{
+    margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 720px) {
-  .main-sidebar {
-    align-items: baseline;
-    width: 30%;
-  }
+.bg-gray{
+    background-color: gray;
+    border-radius: 50%;
+}
 
-  .sidebar-nav ul li,
-  .sidebar-user ul li {
-    padding-left: 10px;
-  }
+/* FOOTER */
 
-  /*** SIDEBAR IMAGE ***/
-
-  .sidebar-nav ul li img {
-    height: 40px;
-    width: 100%;
-    margin-bottom: 20px;
-    display: inline;
-  }
-
-  /*** SIDEBAR TEXT  ***/
-
-  .sidebar-nav ul li {
-  }
-
-  .link-text {
-    display: inline;
-  }
+footer {
+    height: 80px;
+  background-color: #282828;
 }
 
 /* FOOTER CONTAINER */
@@ -318,16 +298,9 @@ i.far:nth-child(3) {
   background-color: white;
 }
 
-@media only screen and (min-width: 720px) {
-  .main-header {
-    background-color: #080b12;
-    width: 70%;
-    float: left;
-    height: 100px;
-  }
 
-  .main-footer {
-    flex-basis: 100px;
-    background-color: #282828;
-  }
+/* HIDDEN 420PX */
+
+.link-text{
+    display: none;
 }

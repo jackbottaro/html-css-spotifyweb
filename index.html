@@ -4,103 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 <body>
-    <div class="wrap">
-
-       
-
-        <main class="main-content">
-            <div class="inside-container clearfix">
-                
-                <div class="main-sidebar">
-
-                    <div class="sidebar-nav">
-
-                        <ul>
-                            <li><a href="#"><span class="link-text">ciao</span> <img src="img\logo-small.svg" alt=""></a></li>
-                            <li><a href="#"><span class="link-text">ciao</span> <img src="img\home.svg" alt=""></a></li>
-                            <li><a href="#"><span class="link-text">ciao</span> <img src="img\search.svg" alt=""></a></li>
-                            <li><a href="#"><span class="link-text">ciao</span> <img src="img\libreria.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="sidebar-user">
-
-                        <ul>
-                            <li><a href="#"><span class="link-text">ciao</span><img src="img\download.svg" alt=""></a></li>
-                            <li><a href="#"><span class="link-text">ciao</span><img src="img\profile.svg" alt="" class="bg-gray"></a></li>
-                        </ul>
-                    </div>
-                    
-
-
-                </div>
-                <header class="main-header">
-                    <div class="upgrade-btn">
-                       <a href="#">effettua l'upgrade</a> 
-                    </div>
-                </header>
-                <div class="inside-content">
-                   
-                </div>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><span class="link-text">ciao</span> <img src="img\logo-small.svg" alt=""></a></li>
+                    <li><a href="#"><span class="link-text">ciao</span> <img src="img\home.svg" alt=""></a></li>
+                    <li><a href="#"><span class="link-text">ciao</span> <img src="img\search.svg" alt=""></a></li>
+                    <li><a href="#"><span class="link-text">ciao</span> <img src="img\libreria.svg" alt=""></a></li>
+                </ul>
             </div>
-            
-        </main>
-        
-        
-        <footer class="main-footer">
-            <div class="container-footer">
-                <div class="album-cover-footer">
-                    <img src="img\sinister.jpeg" alt="">
-                </div>
-                <div class="song-info-footer">
-                    <h5 class="song-name-footer">Sinister</h5>
-                    <h6 class="song-type-footer">Brano</h6>
-                    <p class="song-artist-footer">Nome</p>
-                </div>
-                <div class="select-fv-footer">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
-                </div>
-                <div class="music-controll-footer">
-                    <div class="song-controll">
-                        <i class="fas fa-random"></i>
-                        <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
-                        <i class="fas fa-step-forward"></i>
-                        <i class="fas fa-redo-alt"></i>
-                    </div>
-                    <div class="song-time">
-                        <div class="start-time">
-                            <h6>0:25</h6>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress__bar"></div>
-                          </div>
-                          <div class="end-time">
-                            <h6>4:35</h6>
-                        </div>
+
+            <div class="sidebar-user">
+                <ul>
+                    <li><a href="#"><span class="link-text">ciao</span><img src="img\download.svg" alt=""></a></li>
+                    <li><a href="#"><span class="link-text">ciao</span><img src="img\profile.svg" alt="" class="bg-gray"></a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="upgrade-button">
+                <a href="#">effettua l'upgrade</a>
+            </div>
+        </header>
+        <div class="main-content">
+            <nav class="top-navigation">
+                <ul class="navigation-list">
+                    <li><a href="#">in evidenza</a></li>
+                    <li><a href="#">podcast</a></li>
+                    <li><a href="#">classifiche</a></li>
+                    <li><a href="#">generi e mood</a></li>
+                    <li><a href="#">nuove uscite</a></li>
+                    <li><a href="#">scopri</a></li>
+                </ul>
+            </nav>
+
+            <section class="recently-played">
+                <h2>Recently played</h2>
+
+                <div class="card">
+                    <img src="img\metal_lifting.jpg" alt="">
+                    <div class="text-section">
+                        <h3>Heavy Metal</h3>
+                        <p>Subtitle</p>
                     </div>
                 </div>
-                
-                <div class="share-controll-foooter">
-                    <i class="fas fa-list"></i>
-                    <i class="fas fa-desktop"></i>
+
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="album-cover-footer">
+                <img src="img\sinister.jpeg" alt="">
+            </div>
+            <div class="song-info-footer">
+                <h5 class="song-name-footer">Sinister</h5>
+                <h6 class="song-type-footer">Brano</h6>
+                <p class="song-artist-footer">Nome</p>
+            </div>
+            <div class="select-fv-footer">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+            <div class="music-controll-footer">
+                <div class="song-controll">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
                 </div>
-                <div class="volume-controll-footer">
-                    <i class="fas fa-volume-up"></i>
-                    <div class="volume"> 
-                        <div class="volume__bar"></div>
+                <div class="song-time">
+                    <div class="start-time">
+                        <h6>0:25</h6>
+                    </div>
+                    <div class="progress"> 
+                        <div class="progress__bar"></div>
                       </div>
+                      <div class="end-time">
+                        <h6>4:35</h6>
+                    </div>
                 </div>
             </div>
             
-        </footer>
-    </div>
+            <div class="share-controll-foooter">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+            </div>
+            <div class="volume-controll-footer">
+                <i class="fas fa-volume-up"></i>
+                <div class="volume"> 
+                    <div class="volume__bar"></div>
+                  </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
