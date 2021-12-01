@@ -436,3 +436,45 @@ i.far:nth-child(3) {
 .link-text{
     display: none;
 }
+
+@media only screen and (min-width: 576px) {
+  .sidebar {
+    width: 170px;
+    align-items: normal;
+padding: 10px 10px;
+background-color: black;
+}
+
+.link-text{
+  display: block ruby;
+padding-left: 5px;
+font-size: 13px;
+font-weight: 500;
+cursor: pointer;
+
+
+}
+.main-content {
+margin-left: 170px;
+}
+
+.sidebar-nav li {
+display: flex;
+align-content: baseline;
+align-items: center;
+color: white;
+}
+
+header{
+
+  width: calc(100% - 170px);
+}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+}
