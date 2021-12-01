@@ -27,7 +27,7 @@ ul {
 /* HEADER */
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: calc(100% - 50px);
@@ -104,7 +104,9 @@ overflow-y: auto;
 /*** RECENTLY PLAYED ***/
 
 
-.recently-played h2{
+.recently-played h2, 
+.for-you h2,
+.popular-artist h2{
   color: white;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -143,6 +145,26 @@ text-align: center;
   width: 155px;
   margin-bottom: 10px;
 }
+
+/*** FOR YOU ***/
+
+.for-you p,
+.popular-artist p{
+  color: #6b6e74;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/*** POPULAR ARTIST ***/
+
+.popular-artist .card img{
+  width: 155px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
 /* SIDEBAR */
 
 .sidebar {
