@@ -31,9 +31,10 @@ header {
   top: 0;
   right: 0;
   width: calc(100% - 50px);
-  height: 80px;
+  height: 60px;
   background-color: #000;
-  opacity: .5;
+  opacity: 0.8;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -57,7 +58,7 @@ color: white;
     margin-right: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
    }
 
    .upgrade-button:hover{
@@ -69,7 +70,7 @@ color: white;
 /* MAIN */
 
 main {
-height: calc(100vh - 80px);
+height: calc(100vh - 60px);
   position: relative;
   display: flex;
 }
@@ -78,7 +79,7 @@ height: calc(100vh - 80px);
     background-color: #141922;
 width: 100%;
 margin-left: 50px;
-margin-top: 80px;
+padding-top: 60px;
 overflow-y: auto;
 
 }
