@@ -266,6 +266,23 @@ padding: 10px 0;
 overflow: auto;
 }
 
+.gray-line{
+  color: gray;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* TODO */
+
+/* .user li.gray-line::after{
+  content: "";
+display: block;
+width: 10px;
+height: 10px;
+background-color: #adff2f;
+margin: 0 auto;
+} */
+
+
 
 
 
