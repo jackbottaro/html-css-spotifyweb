@@ -109,8 +109,13 @@ overflow-y: auto;
 
 }
 
+.navigation-list li:hover{
+  color: white;
+
+}
+
 .navigation-list li{
-    margin-left: 13px;
+  padding: 0 13px;
 }
 
 .navigation-list li.active:after{
@@ -119,7 +124,7 @@ overflow-y: auto;
   width: 40%;
   height: 2px;
   background-color: #adff2f;
-  margin: 3px auto;
+  margin: 0 auto;
 
 }
 
@@ -129,7 +134,9 @@ section{
   margin: 50px 0;
 }
 
-.recently-played h2{
+.recently-played h2,
+.for-you h2,
+.popular-artist h2{
   color: white;
   font-size: 23px;
   margin: 15px;
@@ -160,67 +167,6 @@ section{
 
 
 /* HOOVER */
-.container {
-  position: relative;
-  width: 100%;
-
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popular-artist .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.icon {
-  color: white;
-  font-size: 35px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-/* .card:hover{
-  font-family: "Font Awesome 5 Free"; 
-  font-weight: 900; 
-  content: "\f007";
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,  -50%); */ */
 
 /*** FOR YOU ***/
 
@@ -258,10 +204,13 @@ align-items: center;
 padding: 10px 0;
 }
 
+
+
+
 .sidebar-nav,
 .sidebar-user{
     width: 30px;
-    align-content: center;
+    text-align: center;
 }
 
 .sidebar-nav li,
@@ -274,6 +223,18 @@ padding: 10px 0;
     border-radius: 50%;
 }
 
+.sidebar-user > ul:nth-child(1) > li:nth-child(1) > img:nth-child(1) {
+  width: 18px;
+ }
+ 
+ .sidebar li:hover {
+  color: white;
+  filter: opacity(1);
+  }
+
+  .sidebar li{
+    filter: opacity(0.7);
+  }
 /* FOOTER */
 
 footer {
@@ -450,6 +411,11 @@ i.far:nth-child(3) {
   display: none;
 }
 
+.sidebar-playlist > ul:nth-child(1) > li:nth-child(2) {
+  display: flex;
+ }
+ 
+
 @media only screen and (min-width: 576px) {
 
   .logo-small{
@@ -465,6 +431,8 @@ padding: 10px 15px;
 background-color: black;
 }
 
+
+
 .sidebar-nav{
   width: 26px;
 }
@@ -473,8 +441,10 @@ background-color: black;
   display: flex;
   align-content: baseline;
   align-items: center;
-  color: white;
+  color: lightgray;
   }
+
+
   
   .sidebar-user img{
     padding-right: 10px;
@@ -523,6 +493,7 @@ background-color: black;
  
  .sidebar-playlist{
   display: block;
+
 }
 
 
