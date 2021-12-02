@@ -294,6 +294,15 @@ footer {
   height: 100%;
 }
 
+.container-footer  i:hover {
+  color: white;
+  filter: opacity(1);
+  }
+
+  .container-footer i{
+    filter: opacity(0.7);
+  }
+
 .album-cover-footer {
   flex-basis: 10%;
   display: flex;
@@ -500,6 +509,10 @@ i.far:nth-child(3) {
   .logo-small{
     display: none;
   }
+
+  .container-footer i {
+    font-size: 14px;
+}
 
 /* SIDEBAR */
 
