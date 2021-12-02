@@ -399,7 +399,10 @@ footer {
   background-color: #adff2f
 }
 
-.volume-controll-footer:hover .volume__bar::after {
+
+/* TODO */
+
+/* .volume-controll-footer:hover .volume__bar::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -408,7 +411,7 @@ footer {
   left: 38px;
   background-color: white;
   bottom: -4px;
-}
+} */
 
 /*** MUSIC CONTROLL SECTION ***/
 
@@ -473,8 +476,9 @@ i.far:nth-child(3) {
   
 }
 
+/* TODO */
 
-.song-time:hover  .progress__bar::after {
+/* .song-time:hover  .progress__bar::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -483,7 +487,7 @@ i.far:nth-child(3) {
   left: 150px;
   background-color: white;
   bottom: -4px;
-}
+} */
 
 /* HIDDEN 420PX */
 
