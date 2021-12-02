@@ -147,6 +147,13 @@ section{
   margin: 15px;
 }
 
+.for-you h5,
+.popular-artist h5{
+  color: #7D7F84 ;
+    margin-top: 12px;
+    margin: 15px;
+}
+
 .gallery h4{
   margin: 10px 0;
   color: white;
