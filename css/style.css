@@ -219,8 +219,9 @@ padding: 10px 0;
 }
 
 .bg-gray{
-    background-color: gray;
-    border-radius: 50%;
+  background-color: gray;
+  border-radius: 17px;
+  padding: 1px 4px;
 }
 
 .sidebar-user > ul:nth-child(1) > li:nth-child(1) > img:nth-child(1) {
